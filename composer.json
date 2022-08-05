@@ -1,0 +1,32 @@
+{
+    "name": "phply/charts",
+    "description": "The missing charting library on laravel, powered by Chartisan",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "illuminate/contracts": "^7.14.1",
+        "illuminate/http": "^7.14.1",
+        "illuminate/console": "^7.14.1",
+        "illuminate/support": "^7.14.1",
+        "phply/chartisan-php": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Rustam Mamadaminov",
+            "email": "rmamdaminov@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Phply\\Charts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Phply\\Charts\\ChartsServiceProvider"
+            ]
+        }
+    }
+}
